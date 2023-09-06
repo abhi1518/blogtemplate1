@@ -30,7 +30,7 @@ const LeftBar = () => {
             />
             <span>{currentUser.name}</span>
           </div>
-          <div className="item">
+          {/* <div className="item">
             <img src={Friends} alt="" />
             <span>Friends</span>
           </div>
@@ -49,34 +49,34 @@ const LeftBar = () => {
           <div className="item">
             <img src={Memories} alt="" />
             <span>Memories</span>
-          </div>
+          </div> */}
         </div>
         <hr />
         <div className="menu">
           <span>Your shortcuts</span>
           <div className="item">
             <img src={Events} alt="" />
-            <span>Events</span>
+            <span>My Buddy</span>
           </div>
           <div className="item">
             <img src={Gaming} alt="" />
-            <span>Gaming</span>
+            <span>My Views</span>
           </div>
           <div className="item">
             <img src={Gallery} alt="" />
-            <span>Gallery</span>
+            <span>My Circle</span>
           </div>
           <div className="item">
             <img src={Videos} alt="" />
-            <span>Videos</span>
+            <span>My Page</span>
           </div>
           <div className="item">
             <img src={Messages} alt="" />
-            <span>Messages</span>
+            <span>My Events</span>
           </div>
         </div>
         <hr />
-        <div className="menu">
+        {/* <div className="menu">
           <span>Others</span>
           <div className="item">
             <img src={Fund} alt="" />
@@ -90,7 +90,7 @@ const LeftBar = () => {
             <img src={Courses} alt="" />
             <span>Courses</span>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );

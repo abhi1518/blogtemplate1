@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/authContext";
 import "./login.scss";
 
-const Login = () => {
+const Reset = () => {
   const { login } = useContext(AuthContext);
 
   const handleLogin = () => {
@@ -23,20 +23,15 @@ const Login = () => {
           </p> */}
         </div>
         <div className="right">
-          <h1>Login</h1>
+          <h1>Reset Password</h1>
           <form>
-            <input type="text" placeholder="Username" />
-            <input type="password" placeholder="Password" />
-            <Link to="/forget-password" className="text-right" style={{textAlign:"right"}}> Forget Password
-              {/* <button onClick={handleLogin}>Login</button> */}
-            </Link>
+            <input type="text" placeholder="Email" />
+            {/* <input type="password" placeholder="Password" /> */}
+           
             <Link to="/profile/1">
-              <button onClick={handleLogin}>Login</button>
+              <button onClick={handleLogin}>Proceed</button>
             </Link>
-            <span>Don't you have an account?</span>
-            <Link to="/register">
-              <button>Register</button>
-            </Link>
+            
           </form>
         </div>
       </div>
@@ -44,4 +39,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Reset;

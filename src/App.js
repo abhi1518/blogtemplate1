@@ -16,6 +16,7 @@ import "./style.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/authContext";
+import Reset from "./pages/login/ForgetPassword";
 
 function App() {
   const {currentUser} = useContext(AuthContext);
@@ -71,6 +72,10 @@ function App() {
     {
       path: "/register",
       element: <Register />,
+    },
+    {
+      path: "/forget-password",
+      element: <Reset />,
     },
   ]);
 
