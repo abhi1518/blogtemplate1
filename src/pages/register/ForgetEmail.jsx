@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import "./register.scss";
+import { forgetOtp } from '../../api';
 
 const ForgetEmail = () => {
   const [status, setStatus] = useState('');
@@ -27,7 +28,7 @@ const ForgetEmail = () => {
     if (handleValidation()) {
       // Form is valid, navigate to another page
       handleSubmit();
-      navigate('/forget-email'); // Replace '/another-page' with the actual path
+      // Replace '/another-page' with the actual path
     }
   };
 
@@ -46,7 +47,7 @@ const ForgetEmail = () => {
       localStorage.setItem('email', email);
       if(result.success ){
         // window.location.href = '/register/otp';
-        history.push('/forget/verifyotp');
+        navigate('/forget-email');
       }
       setStatus(result);
     } catch (error) {
