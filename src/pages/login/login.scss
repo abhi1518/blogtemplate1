@@ -1,5 +1,5 @@
 .login {
-  height: 100vh;
+  height: auto !important;
   background-color: rgb(193, 190, 255);
   display: flex;
   align-items: center;
@@ -12,6 +12,7 @@
     border-radius: 10px;
     min-height: 600px;
     overflow: hidden;
+    flex-direction: row;
 
     .left {
       // flex: 1;
@@ -64,12 +65,12 @@
       form {
         display: flex;
         flex-direction: column;
-        gap: 30px;
+        gap:  5px !important;
         
         input {
         border: none;
         border-bottom: 1px solid lightgray;
-        padding: 20px 10px;
+        padding: 10px 10px !important;
         }
         
         button {

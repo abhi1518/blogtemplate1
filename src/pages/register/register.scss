@@ -86,6 +86,10 @@
   }
 }
 
+.error{
+  color: red;
+}
+
 @media screen and (max-width: 480px) {
   /* CSS rules for screens with a width of 768px or less */
   .login .card {

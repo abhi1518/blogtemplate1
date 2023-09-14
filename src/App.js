@@ -16,7 +16,11 @@ import "./style.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
 import { AuthContext } from "./context/authContext";
-import Reset from "./pages/login/ForgetPassword";
+import ForgetEmail from "./pages/register/ForgetEmail";
+import RegisterVerifyOtp from "./pages/register/RegisterVerifyOtp";
+import RegisterPassword from "./pages/register/RegisterPassword";
+import ForgetVerifyOtp from "./pages/register/ForgetVerifyOtp";
+import ForgetPassword from "./pages/register/ForgetPassword";
 
 function App() {
   const {currentUser} = useContext(AuthContext);
@@ -74,8 +78,24 @@ function App() {
       element: <Register />,
     },
     {
+      path: "/forget-email",
+      element: <ForgetEmail />,
+    },
+    {
+      path: "/register-otp",
+      element: <RegisterVerifyOtp />,
+    },
+    {
+      path: "/register-password",
+      element: <RegisterPassword />,
+    },
+    {
+      path: "/forget-otp",
+      element: <ForgetVerifyOtp />,
+    },
+    {
       path: "/forget-password",
-      element: <Reset />,
+      element: <ForgetPassword />,
     },
   ]);
 
